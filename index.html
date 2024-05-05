@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>EO WEB DEV</title>
+   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
     <nav id="desktop-nav">
@@ -13,12 +13,294 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Emmanuel Ogunnowo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile" class="section-container slide-in">
+      <div class="section__pic-container slide-in">
+        <img src="./assets/hero.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text slide-in">
+        <p class="section__text__p1 slide-in">I'm</p>
+        <h1 class="title slide-in" id="profile-title">Emmanuel Ogunnowo</h1>
+        <div class="btn-container slide-in">
+          <button class="btn btn-color-2" onclick="window.open('./assets/emmanuel-ogunnowo-cv.pdf')">Download My CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Information</button>
+        </div>
+        <div class="socials-container slide-in">
+          <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/'" />
+          <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://www.github.com/'" />
+        </div>
+      </div>
+      <a href="#about" id="arrow-profile-to-about">
+        <img src="./assets/arrow.png" alt="Arrow-icon" class="icon-arrow-profile slide-in" />
+      </a>
+    </section>
+    
+    
+    <section id="about" >
+        <p class="section__text__p1 slide-in">Get To Know More</p>
+        <h1 class="title slide-in">About Me</h1>
+        <div class="section-container slide-in">
+            <div class="section__pic-container slide-in">
+                <img src="./assets/about-pic-2.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="/assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p><br />2+ years <br />Advertising Operations Executive at EssenceMediacom</p><br />
+                        <p>1 year<br />Web Developer Intern at ACS Community Projects UK</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="/assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p><br />Frontend Developer Certification from Codecademy<br /><br />BA Hons Business Management & Marketing</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a professionally certified web developer eager to transition from advertising operations to a dynamic role in front end development.
+                        With 2+ years' experience in advertising technology and 1 year as a Web Developer Intern.
+                        I bring a passion for crafting engaging user experiences through developing beautifully crafted code to build web apps and websites.
+                        Ready to channel this enthusiasm into a fulfilling career in tech.
+                    </p>
+                </div>
+            </div>
+            <a href="#skills" id="arrow-about-to-skills">
+                <img src="./assets/arrow.png" alt="Arrow-icon" class="icon-arrow-about" />
+            </a>
+        </section>
+        <section id="skills" >
+            <p class="section__text__p1 slide-in">A List Of My</p>
+            <h1 class="title slide-in">Skills</h1>
+            <div class="skills-details-container slide-in">
+                <div class="skills-containers slide-in">
+                    <div class="details-container slide-in">
+                        <h2 class="skills-sub-title slide-in">Things I have learnt:</h2>
+                        <div class="article-skills-container slide-in">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                            <!-- Additional articles -->
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>React.js</h3>
+                                <p>Basic</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>Web Design</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>Figma</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>Web Management</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>Redux</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>Git & Github</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                            <article>
+                              <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                              />
+                              <div>
+                                <h3>SEO</h3>
+                                <p>Intermediate</p>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  <a href="#projects" id="arrow-skills-to-projects">
+    <img 
+      src="./assets/arrow.png" 
+      alt="Arrow-icon"
+      class="icon-arrow-skills"/>
+  </a>
+</section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-details-container">
+            <div class="projects-containers color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="projects-containers color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="projects-containers color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <a href="#contact" id="arrow-projects-to-contact">
+            <img 
+                src="./assets/arrow.png" 
+                alt="Arrow-icon"
+                class="icon-arrow-projects"/>
+        </a>
+    </section> 
+    
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:emmanuel.ogunnowo@yahoo.com">emmanuel.ogunnowo@yahoo.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Emmanuel Ogunnowo. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
